@@ -1,0 +1,18 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "nilai",
+    "input",
+    "getNilai",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;AAAA;;AAEA;;;;;;;;;;;AAWA,IAAIA,QAAQ,CAAZ;AACA,IAAIC,QAAQ;AACRC,cAAS,oBAAU;AACf,eAAOF,KAAP;AACH;;AAHO,CAAZ;AAMAG,OAAOC,OAAP,GAAiBH,KAAjB",
+  "file": "unknown",
+  "sourcesContent": [
+    "// var money = 200;\r\n\r\n/* var economy = {\r\n\r\n    getMoney:function()\r\n    {\r\n        return money;\r\n    },\r\n    }\r\nmodule.exports = economy;\r\n\r\n*/\r\n\r\nvar nilai = 4;\r\nvar input = {\r\n    getNilai:function(){\r\n        return nilai;\r\n    },\r\n    \r\n}\r\nmodule.exports = input;"
+  ]
+}
