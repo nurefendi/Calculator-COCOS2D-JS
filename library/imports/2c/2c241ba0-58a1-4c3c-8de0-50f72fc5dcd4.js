@@ -1,16 +1,5 @@
 "use strict";
 
-/* var economy = require('Economy')
-cc.Class({
-    extends: cc.Component,
-
-    properties: {
-        gameName: "",
-    },
-    onLoad: function () {
-    var cash = economy.getMoney();
-    }
-} */
 var input = require('globalVariables');
 cc.Class({
     extends: cc.Component,
@@ -39,7 +28,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function onLoad() {
-        var inputan = input.getNilai();
+        this.editbox.string = input.getNilai();
     },
 
     onButtonClickClear: function onButtonClickClear() {
@@ -80,7 +69,12 @@ cc.Class({
     },
     onButtonClickKali: function onButtonClickKali() {
         //  var nilai1 = this.editbox.string;
-        this.editbox.string += "*";
+        //  var masuk = new input.setNilai();
+        //   masuk = this.editbox.string;
+        //   input.setNilai(masuk);
+        // this.editbox.string="";
+        //this.editbox.string += "*";
+        input.getNilai();
     },
     onButtonClickBagi: function onButtonClickBagi() {
         this.editbox.string += "/";
@@ -90,6 +84,9 @@ cc.Class({
     },
     onButtonClickTambah: function onButtonClickTambah() {
         this.editbox.string += "+";
+    },
+    onButtonClickSamadengan: function onButtonClickSamadengan() {
+        this.editbox.string = input.getNilai();
     }
 
 });

@@ -1,29 +1,26 @@
 "use strict";
-cc._RFpush(module, '461c8mdXM5Fa7HnMWOjPyXU', 'globalVariables');
+cc._RFpush(module, '5ca96qRk8VMjYN8l0Wvfe1V', 'globalVariables');
 // globalVariables.js
 
 "use strict";
 
-// var money = 200;
-
-/* var economy = {
-
-    getMoney:function()
-    {
-        return money;
-    },
-    }
-module.exports = economy;
-
-*/
-
-var nilai = 4;
+/*
 var input = {
-    getNilai: function getNilai() {
+    getNilai:function(){
+        var nilai = 0;
         return nilai;
-    }
-
+    },
+    setNilai:function(){
+        return nilai;
+    },
+    
+}
+module.exports = input;
+*/
+var input = {
+    nilai: 0
 };
+input.load();
 module.exports = input;
 
 cc._RFpop();

@@ -220,18 +220,18 @@
     "relativePath": "prefab\\webview.prefab"
   },
   "6ecfe3fb-8e21-4dca-b075-fc8b05996625": {
-    "asset": 1491919527433,
-    "meta": 1491919527451,
+    "asset": 1491940861901,
+    "meta": 1491940861950,
     "relativePath": "Calculator.fire"
   },
   "2c241ba0-58a1-4c3c-8de0-50f72fc5dcd4": {
-    "asset": 1491919368111,
-    "meta": 1491919368329,
+    "asset": 1491976708454,
+    "meta": 1491976708650,
     "relativePath": "Scrip.js"
   },
-  "461c899d-5cce-456b-b1e7-3163a33f25d4": {
-    "asset": 1491917265754,
-    "meta": 1491917265789,
+  "5ca96a91-93c5-4c8d-837c-9745af7ded55": {
+    "asset": 1491976761899,
+    "meta": 1491976761923,
     "relativePath": "globalVariables.js"
   }
 }
