@@ -4,23 +4,24 @@ cc._RFpush(module, '5ca96qRk8VMjYN8l0Wvfe1V', 'globalVariables');
 
 "use strict";
 
-/*
 var input = {
-    getNilai:function(){
-        var nilai = 0;
-        return nilai;
+    nilai: 0,
+    nilai2: 0,
+    operator: "",
+    load: function load() {
+        return input.nilai;
     },
-    setNilai:function(){
-        return nilai;
+    load2: function load2() {
+        return input.nilai2;
     },
-    
-}
-module.exports = input;
-*/
-var input = {
-    nilai: 0
+    bcoperator: function bcoperator() {
+        return input.operator;
+    }
+
 };
 input.load();
+input.load2();
+input.bcoperator();
 module.exports = input;
 
 cc._RFpop();

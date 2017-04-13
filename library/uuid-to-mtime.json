@@ -225,13 +225,13 @@
     "relativePath": "Calculator.fire"
   },
   "2c241ba0-58a1-4c3c-8de0-50f72fc5dcd4": {
-    "asset": 1491976708454,
-    "meta": 1491976708650,
+    "asset": 1492066888877,
+    "meta": 1492066889099,
     "relativePath": "Scrip.js"
   },
   "5ca96a91-93c5-4c8d-837c-9745af7ded55": {
-    "asset": 1491976761899,
-    "meta": 1491976761923,
+    "asset": 1492064453688,
+    "meta": 1492064453821,
     "relativePath": "globalVariables.js"
   }
 }

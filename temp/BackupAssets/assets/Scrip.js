@@ -26,11 +26,14 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        this.editbox.string = input.getNilai();
+      //  this.editbox.string = input.getNilai();
     },
     
     onButtonClickClear: function() {
         this.editbox.string ="";
+        input.nilai=0;
+        input.nilai2=0;
+        input.operator="";
      },
     onButtonClick: function() {
         this.editbox.string += "1";
@@ -66,25 +69,45 @@ cc.Class({
         this.editbox.string += ".";
     },
     onButtonClickKali: function() {
-      //  var nilai1 = this.editbox.string;
-      //  var masuk = new input.setNilai();
-     //   masuk = this.editbox.string;
-     //   input.setNilai(masuk);
-       // this.editbox.string="";
-        //this.editbox.string += "*";
-        input.getNilai();
+        input.nilai = this.editbox.string;
+        input.operator ="*";
+        this.editbox.string="";
     },
     onButtonClickBagi: function() {
-        this.editbox.string += "/";
+        input.nilai = this.editbox.string;
+        input.operator = "/";
+        this.editbox.string="";
     },
     onButtonClickKurang: function() {
-        this.editbox.string += "-";
+        input.nilai = this.editbox.string;
+        input.operator = "-";
+        this.editbox.string="";
+        
     },
     onButtonClickTambah: function() {
-        this.editbox.string += "+";
+        input.nilai = this.editbox.string;
+        input.operator = "+";
+        this.editbox.string="";
     },
     onButtonClickSamadengan: function() {
-        this.editbox.string = input.getNilai();
+       // this.editbox.string = input.load();
+        input.nilai2 = this.editbox.string;
+        if (input.bcoperator() == "*") {
+            var hasil = input.load() * input.load2();
+            this.editbox.string = hasil;
+        }
+        if (input.bcoperator() == "/") {
+            var hasil1 = input.load() / input.load2();
+            this.editbox.string = hasil1;
+        }
+        if (input.bcoperator() == "-") {
+            var hasil2 = input.load() - input.load2();
+            this.editbox.string = hasil2;
+        }
+        if (input.bcoperator() == "+") {
+            var hasil3 = parseInt(input.load()) + parseInt(input.load2());
+            this.editbox.string = hasil3;
+        }
     },
   
     
